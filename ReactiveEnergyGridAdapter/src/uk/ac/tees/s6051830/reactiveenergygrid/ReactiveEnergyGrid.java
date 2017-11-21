@@ -22,14 +22,14 @@ public class ReactiveEnergyGrid
         
         for (Forecast forecast : weatherForecasts)
         {
-            System.out.println("Weather Forecast");
+            System.out.println("\n\nWeather Forecast");
             System.out.println("---------------------------------");
             System.out.println("Temperature:\t" + df.format(forecast.getTemperature()) + "\u2103");
             System.out.println("Humidity:\t" + forecast.getHumidity() + "%");
             System.out.println("Rain Level:\t" + forecast.getRainLevel() + "mm");
             System.out.println("Wind:\t\t" + forecast.getWindDirection() + " " + forecast.getWindSpeed() + "mph");
             System.out.println("Skies:\t\t" + forecast.getSkyDescription());
-            System.out.println("---------------------------------\n\n");
+            System.out.println("---------------------------------");
         }
     }
     
